@@ -1,0 +1,24 @@
+How to compile?
+
+Go to the directory where pom.xml file sits, run:
+
+mvn clean install
+
+to compile the whole project. The generated jar file will sit under target directory.
+
+How to run?
+
+Use:
+
+java -cp jar-name core.UdtServer port-number
+
+to run the server.
+
+Use:
+
+java -cp jar-name core.UdtClient server server-port remote-file-path local-file-path
+
+to run the client.
+
+Reference:
+https://tools.ietf.org/html/draft-gg-udt-03
